@@ -29,7 +29,7 @@ static void	send_bit(pid_t pid, int bit)
 		sig = SIGUSR2;
 	if (kill(pid, sig) == -1)
 		exit(1);
-	usleep(120);
+	usleep(400);
 }
 
 static void	send_byte(pid_t pid, unsigned char c)

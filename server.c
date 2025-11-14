@@ -34,7 +34,7 @@ static void	handler(int sig)
 
 int	main(void)
 {
-	struct sigaction	act;
+	struct sigaction	s_act;
 
 	ft_printf("PID: %d\n", getpid());
 	act.sa_handler = handler;
